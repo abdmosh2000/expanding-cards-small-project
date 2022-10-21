@@ -9,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #e0e0e0;
 }
 
 .container {
@@ -26,16 +27,19 @@ body {
     border-radius: 90px;
     cursor: pointer;
     transition: 1.5s all ease;
+    filter: blur(2px);
 }
 
-.active {
+img.active {
     flex-grow: 1;
+    filter: blur(0px);
 }
 
 @media (max-width: 767px) {
     .container {
         flex-direction: column;
         width: 100%;
+        max-height: 100vh;
     }
 
     .container img {
